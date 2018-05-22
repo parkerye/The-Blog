@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="data-dev" uuid="3021b03c-3e43-49b2-ba2c-25a334c414a9">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\code\project\chat\data-dev.sqlite</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="data-dev.sqlite" uuid="de9be523-13f9-4d67-9b79-7e02e80d4382">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/data-dev.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>

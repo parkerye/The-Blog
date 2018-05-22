@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}南滨社区 - 人员信息管理{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>人员信息管理</h1>
+</div>
+
+{% include '_users.html' %}
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, '.users') }}
+</div>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    {{ moment.include_moment() }}
+{% endblock %}

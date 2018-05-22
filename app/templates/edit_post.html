@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}南滨社区 - Edit Post{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Edit Post</h1>
+</div>
+<div>
+    {{ wtf.quick_form(form) }}
+</div>
+{% include '_comments.html' %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ ckeditor.load() }}
+    {{ ckeditor.config(name='body') }}
+{% endblock %}

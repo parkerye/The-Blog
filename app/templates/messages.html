@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}南滨社区 - 文章信息管理{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>文章信息管理</h1>
+</div>
+<li><div class="post-user-name">用户名</div><div class="post-date-name">时间</div><div class="post-title-name">标题</div></li>
+
+{% include '_messages.html' %}
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, '.messages') }}
+</div>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    {{ moment.include_moment() }}
+{% endblock %}
