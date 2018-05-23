@@ -2,13 +2,14 @@
 
 #### 项目介绍
 
-这是一个针对于南开大学滨海学院的学生博客网站。
-大家可以在上面发表文章。
+1. 这是一个针对于南开大学滨海学院的学生博客网站。
+2. 大家可以在上面发表文章。
 
 #### 软件架构
 
-language:Python
-framework:Flask
+1. language:Python
+
+2. framework:Flask
 
 
 #### 安装教程
